@@ -28,7 +28,7 @@ public class Postfix {
                 } else if (c == '-') {
                     x = calc.pop();
                     y = calc.pop();
-                    r = x - y;
+                    r = y - x;
                     calc.push(r);
                 } else if (c == '*') {
                     x = calc.pop();
@@ -38,12 +38,12 @@ public class Postfix {
                 } else if (c == '/') {
                     x = calc.pop();
                     y = calc.pop();
-                    r = x / y;
+                    r = y / x;
                     calc.push(r);
                 } else if (c == '%'){
                     x = calc.pop();
                     y = calc.pop();
-                    r = x % y;
+                    r = y % x;
                     calc.push(r);
                 }
             }
