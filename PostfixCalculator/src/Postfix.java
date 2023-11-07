@@ -8,7 +8,7 @@ public class Postfix {
     }
 
 
-    public Integer calculate(String input1) throws FileNotFoundException {
+    public int calculate(String input1) throws FileNotFoundException {
         //File file = new File("in.txt");
         String input = input1;
         Stack<Integer> calc = new Stack<Integer>();
