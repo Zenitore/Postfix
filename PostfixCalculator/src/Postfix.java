@@ -40,6 +40,11 @@ public class Postfix {
                     y = calc.pop();
                     r = x / y;
                     calc.push(r);
+                } else if (c == '%'){
+                    x = calc.pop();
+                    y = calc.pop();
+                    r = x % y;
+                    calc.push(r);
                 }
             }
         int a = calc.pop();
